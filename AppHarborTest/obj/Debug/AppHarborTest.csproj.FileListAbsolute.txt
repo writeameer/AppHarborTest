@@ -3,3 +3,15 @@ C:\progs\AppHarborTest\AppHarborTest\bin\AppHarborTest.pdb
 C:\progs\AppHarborTest\AppHarborTest\obj\Debug\ResolveAssemblyReference.cache
 C:\progs\AppHarborTest\AppHarborTest\obj\Debug\AppHarborTest.dll
 C:\progs\AppHarborTest\AppHarborTest\obj\Debug\AppHarborTest.pdb
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.dll
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.Web.dll
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.Web.Mvc.dll
+C:\progs\AppHarborTest\AppHarborTest\bin\Newtonsoft.Json.dll
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.pdb
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.xml
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.Web.pdb
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.Web.xml
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.Web.Mvc.pdb
+C:\progs\AppHarborTest\AppHarborTest\bin\Facebook.Web.Mvc.xml
+C:\progs\AppHarborTest\AppHarborTest\bin\Newtonsoft.Json.pdb
+C:\progs\AppHarborTest\AppHarborTest\bin\Newtonsoft.Json.xml

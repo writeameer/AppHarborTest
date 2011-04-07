@@ -1,150 +1,86 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Security.Principal;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Routing;
-using System.Web.Security;
 using AppHarborTest.Models;
+using Facebook;
+using System.Web.Security;
 
 namespace AppHarborTest.Controllers
 {
     public class AccountController : Controller
     {
+        private const string LogoffUrl = "http://localhost:58707/";
+        private const string RedirectUrl = "http://localhost:58707/Account/OAuth";
+        //
+        // GET: /Account/LogOn/
 
-        public IFormsAuthenticationService FormsService { get; set; }
-        public IMembershipService MembershipService { get; set; }
-
-        protected override void Initialize(RequestContext requestContext)
+        public ActionResult LogOn(string returnUrl)
         {
-            if (FormsService == null) { FormsService = new FormsAuthenticationService(); }
-            if (MembershipService == null) { MembershipService = new AccountMembershipService(); }
-
-            base.Initialize(requestContext);
+            var oAuthClient = new FacebookOAuthClient(FacebookApplication.Current) {RedirectUri = new Uri(RedirectUrl)};
+            var loginUri = oAuthClient.GetLoginUrl(new Dictionary<string, object> { { "state", returnUrl } });
+            return Redirect(loginUri.AbsoluteUri);
         }
 
-        // **************************************
-        // URL: /Account/LogOn
-        // **************************************
+        //
+        // GET: /Account/OAuth/
 
-        public ActionResult LogOn()
+        public ActionResult OAuth(string code, string state)
         {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult LogOn(LogOnModel model, string returnUrl)
-        {
-            if (ModelState.IsValid)
+            FacebookOAuthResult oauthResult;
+            if (FacebookOAuthResult.TryParse(Request.Url, out oauthResult))
             {
-                if (MembershipService.ValidateUser(model.UserName, model.Password))
+                if (oauthResult.IsSuccess)
                 {
-                    FormsService.SignIn(model.UserName, model.RememberMe);
-                    if (Url.IsLocalUrl(returnUrl))
+                    var oAuthClient = new FacebookOAuthClient(FacebookApplication.Current)
+                                          {RedirectUri = new Uri(RedirectUrl)};
+                    dynamic tokenResult = oAuthClient.ExchangeCodeForAccessToken(code);
+                    string accessToken = tokenResult.access_token;
+
+                    var expiresOn = DateTime.MaxValue;
+
+                    if (tokenResult.ContainsKey("expires"))
                     {
-                        return Redirect(returnUrl);
+                        DateTimeConvertor.FromUnixTime(tokenResult.expires);
+                    }
+
+                    var fbClient = new FacebookClient(accessToken);
+                    dynamic me = fbClient.Get("me?fields=id,name");
+                    long facebookId = Convert.ToInt64(me.id);
+
+                    InMemoryUserStore.Add(new FacebookUser
+                    {
+                        AccessToken = accessToken,
+                        Expires = expiresOn,
+                        FacebookId = facebookId,
+                        Name = (string)me.name,
+                    });
+
+                    FormsAuthentication.SetAuthCookie(facebookId.ToString(), false);
+
+                    // prevent open redirection attack by checking if the url is local.
+                    if (Url.IsLocalUrl(state))
+                    {
+                        return Redirect(state);
                     }
                     else
                     {
                         return RedirectToAction("Index", "Home");
                     }
                 }
-                else
-                {
-                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
-                }
             }
-
-            // If we got this far, something failed, redisplay form
-            return View(model);
-        }
-
-        // **************************************
-        // URL: /Account/LogOff
-        // **************************************
-
-        public ActionResult LogOff()
-        {
-            FormsService.SignOut();
 
             return RedirectToAction("Index", "Home");
         }
 
-        // **************************************
-        // URL: /Account/Register
-        // **************************************
+        //
+        // GET: /Account/LogOff/
 
-        public ActionResult Register()
+        public ActionResult LogOff()
         {
-            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Register(RegisterModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                // Attempt to register the user
-                MembershipCreateStatus createStatus = MembershipService.CreateUser(model.UserName, model.Password, model.Email);
-
-                if (createStatus == MembershipCreateStatus.Success)
-                {
-                    FormsService.SignIn(model.UserName, false /* createPersistentCookie */);
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    ModelState.AddModelError("", AccountValidation.ErrorCodeToString(createStatus));
-                }
-            }
-
-            // If we got this far, something failed, redisplay form
-            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
-            return View(model);
-        }
-
-        // **************************************
-        // URL: /Account/ChangePassword
-        // **************************************
-
-        [Authorize]
-        public ActionResult ChangePassword()
-        {
-            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
-            return View();
-        }
-
-        [Authorize]
-        [HttpPost]
-        public ActionResult ChangePassword(ChangePasswordModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                if (MembershipService.ChangePassword(User.Identity.Name, model.OldPassword, model.NewPassword))
-                {
-                    return RedirectToAction("ChangePasswordSuccess");
-                }
-                else
-                {
-                    ModelState.AddModelError("", "The current password is incorrect or the new password is invalid.");
-                }
-            }
-
-            // If we got this far, something failed, redisplay form
-            ViewBag.PasswordLength = MembershipService.MinPasswordLength;
-            return View(model);
-        }
-
-        // **************************************
-        // URL: /Account/ChangePasswordSuccess
-        // **************************************
-
-        public ActionResult ChangePasswordSuccess()
-        {
-            return View();
+            FormsAuthentication.SignOut();
+            var oAuthClient = new FacebookOAuthClient {RedirectUri = new Uri(LogoffUrl)};
+            var logoutUrl = oAuthClient.GetLogoutUrl();
+            return Redirect(logoutUrl.AbsoluteUri);
         }
 
     }

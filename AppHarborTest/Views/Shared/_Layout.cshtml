@@ -30,7 +30,11 @@
 
         <div id="main">
             @RenderBody()
+            
+             @{ Html.RenderPartial("FacebookInit"); }
+            
             <div id="footer">
+
             </div>
         </div>
     </div>

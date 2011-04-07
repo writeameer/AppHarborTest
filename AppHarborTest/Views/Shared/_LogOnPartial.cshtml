@@ -1,7 +1,12 @@
-﻿@if(Request.IsAuthenticated) {
+﻿@using Facebook.Web;
+
+
+@if (FacebookWebContext.Current.IsAuthenticated())
+{
     <text>Welcome <b>@Context.User.Identity.Name</b>!
     [ @Html.ActionLink("Log Off", "LogOff", "Account") ]</text>
 }
-else {
-    @:[ @Html.ActionLink("Log On", "LogOn", "Account") ]
+else
+{
+   @:[ @Html.ActionLink("Log On", "LogOn", "Account") ]
 }
