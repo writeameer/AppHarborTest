@@ -9,8 +9,8 @@ namespace AppHarborTest.Controllers
 {
     public class AccountController : Controller
     {
-        private const string LogoffUrl = "http://localhost:58707/";
-        private const string RedirectUrl = "http://localhost:58707/Account/OAuth";
+        private const string LogoffUrl = "http://AppHarborTest-3.apphb.com/";
+        private const string RedirectUrl = "http://AppHarborTest-3.apphb.com/Account/OAuth";
         //
         // GET: /Account/LogOn/
 
