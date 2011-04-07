@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5d661b5a-5958-4504-aa3b-0e639e478ab6" name="Ameer Deen@WORKVM 2011-04-07 18:42:32" runUser="WorkVM\Ameer Deen" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="23aa583c-633a-4f66-828a-541b57b2f60b">
+    <Deployment runDeploymentRoot="Ameer Deen_WORKVM 2011-04-07 18_42_32">
+      <DeploymentItem filename="C:\progs\AppHarborTest\AppHarborTest\bin\AppHarborTest.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-04-07T18:42:32.2630444+10:00" queuing="2011-04-07T18:42:35.0019920+10:00" start="2011-04-07T18:42:35.1660954+10:00" finish="2011-04-07T18:42:36.3304410+10:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="18" executed="18" passed="18" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LogOn_Post_ReturnsRedirectToHomeOnSuccess_WithExternalReturnUrl" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="23eb09d9-1519-a9a6-44bd-53e24463bd40">
+      <Execution id="9f359a3c-a3ad-4d0c-bbe0-639c2cbf3579" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsRedirectToHomeOnSuccess_WithExternalReturnUrl" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsRedirectOnSuccess" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="0129aa10-bdb0-4acc-937f-4e937c513b8b">
+      <Execution id="3056a485-3f3b-4c62-9e45-5e0cf823d5a0" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsRedirectOnSuccess" />
+    </UnitTest>
+    <UnitTest name="Index" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="c2cd1a28-ec4b-6499-d653-2a179aa4fd76">
+      <Execution id="f79937fe-2c46-4192-82c7-c3fb96edf6d0" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.HomeControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+    <UnitTest name="Register_Get_ReturnsView" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="a4849415-5bde-8523-b695-d82317707666">
+      <Execution id="b3c5b1b4-76dc-41e1-a5c3-4b302aeba0f1" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsRedirectOnSuccess_WithLocalReturnUrl" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="84273de0-1cf9-20da-b560-c0c1beb73bd3">
+      <Execution id="88e3fc39-a393-490b-b8eb-cf1ecfeec05e" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsRedirectOnSuccess_WithLocalReturnUrl" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsRedirectOnSuccess" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="139457e8-335f-3f55-b2a5-bcfb2b314526">
+      <Execution id="cac06341-d4c0-41b3-bba4-2464a87c7e0a" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsRedirectOnSuccess" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Get_ReturnsView" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="a01b953b-0ed4-a498-7947-0213da26f87a">
+      <Execution id="9a6d1c3b-e3c7-419c-ad39-4e65c91e37a1" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="LogOn_Get_ReturnsView" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="bc3b29b3-c89b-12ca-eadb-bd2a77b17964">
+      <Execution id="8d78e1e1-ce3e-4ada-8007-e305835786d4" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsViewIfModelStateIsInvalid" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="20e87d7b-72ec-d77e-ec78-b09a93507292">
+      <Execution id="2f96fcb2-888d-4296-9f42-42494d93b34d" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="f3c3037e-e28f-1f31-edab-dcbe9abbc878">
+      <Execution id="4a553a8e-29ff-4bda-8667-db3e93329e23" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="1ea4a8bf-c433-5917-c8ed-fc91859ca58f">
+      <Execution id="52c0f0e4-91fe-4589-87df-ab759e2d0f68" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsViewIfValidateUserFails" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="60620dd9-3bce-914b-63f4-25a0b7eeb609">
+      <Execution id="6b131316-053a-4728-b6a7-e3c87967f0d8" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsViewIfValidateUserFails" />
+    </UnitTest>
+    <UnitTest name="About" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="39e0631b-d5f8-1ce4-5584-a008e697d73a">
+      <Execution id="88dbc116-cfd0-4ab7-95a3-4d4f4391752b" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.HomeControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsViewIfChangePasswordFails" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="092c65df-bb24-39c6-3b72-baf05aa9ca91">
+      <Execution id="b1c2a2a2-77c9-446f-a4e3-3d60ef2caeb6" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsViewIfChangePasswordFails" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordSuccess_ReturnsView" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="6f550e7a-84eb-d477-d487-190f1b5242f3">
+      <Execution id="42f739f3-1b51-4645-b6c9-8cfbd91e84ea" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePasswordSuccess_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsViewIfRegistrationFails" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="ef320b4e-eb3f-09cb-1303-3ff016786e60">
+      <Execution id="ed93b3df-9525-4b52-8e39-d7a3036bbfdb" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsViewIfRegistrationFails" />
+    </UnitTest>
+    <UnitTest name="LogOff_LogsOutAndRedirects" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="77102074-19bc-f0cf-653b-b71c680d3f92">
+      <Execution id="c0d0edde-4504-40a3-bf7b-77ae1de6e4d2" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOff_LogsOutAndRedirects" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsViewIfModelStateIsInvalid" storage="c:\progs\appharbortest\appharbortest.tests\bin\debug\appharbortest.tests.dll" id="41f44855-3e8f-adbb-c5a0-0fca8b58c94b">
+      <Execution id="b999044e-7ecc-4bd4-9109-252e55cba424" />
+      <TestMethod codeBase="C:/progs/AppHarborTest/AppHarborTest.Tests/bin/Debug/AppHarborTest.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="AppHarborTest.Tests.Controllers.AccountControllerTest, AppHarborTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a01b953b-0ed4-a498-7947-0213da26f87a" executionId="9a6d1c3b-e3c7-419c-ad39-4e65c91e37a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="139457e8-335f-3f55-b2a5-bcfb2b314526" executionId="cac06341-d4c0-41b3-bba4-2464a87c7e0a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="092c65df-bb24-39c6-3b72-baf05aa9ca91" executionId="b1c2a2a2-77c9-446f-a4e3-3d60ef2caeb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ea4a8bf-c433-5917-c8ed-fc91859ca58f" executionId="52c0f0e4-91fe-4589-87df-ab759e2d0f68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f550e7a-84eb-d477-d487-190f1b5242f3" executionId="42f739f3-1b51-4645-b6c9-8cfbd91e84ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77102074-19bc-f0cf-653b-b71c680d3f92" executionId="c0d0edde-4504-40a3-bf7b-77ae1de6e4d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc3b29b3-c89b-12ca-eadb-bd2a77b17964" executionId="8d78e1e1-ce3e-4ada-8007-e305835786d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3c3037e-e28f-1f31-edab-dcbe9abbc878" executionId="4a553a8e-29ff-4bda-8667-db3e93329e23" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84273de0-1cf9-20da-b560-c0c1beb73bd3" executionId="88e3fc39-a393-490b-b8eb-cf1ecfeec05e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23eb09d9-1519-a9a6-44bd-53e24463bd40" executionId="9f359a3c-a3ad-4d0c-bbe0-639c2cbf3579" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41f44855-3e8f-adbb-c5a0-0fca8b58c94b" executionId="b999044e-7ecc-4bd4-9109-252e55cba424" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60620dd9-3bce-914b-63f4-25a0b7eeb609" executionId="6b131316-053a-4728-b6a7-e3c87967f0d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4849415-5bde-8523-b695-d82317707666" executionId="b3c5b1b4-76dc-41e1-a5c3-4b302aeba0f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0129aa10-bdb0-4acc-937f-4e937c513b8b" executionId="3056a485-3f3b-4c62-9e45-5e0cf823d5a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef320b4e-eb3f-09cb-1303-3ff016786e60" executionId="ed93b3df-9525-4b52-8e39-d7a3036bbfdb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20e87d7b-72ec-d77e-ec78-b09a93507292" executionId="2f96fcb2-888d-4296-9f42-42494d93b34d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2cd1a28-ec4b-6499-d653-2a179aa4fd76" executionId="f79937fe-2c46-4192-82c7-c3fb96edf6d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39e0631b-d5f8-1ce4-5584-a008e697d73a" executionId="88dbc116-cfd0-4ab7-95a3-4d4f4391752b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9a6d1c3b-e3c7-419c-ad39-4e65c91e37a1" testId="a01b953b-0ed4-a498-7947-0213da26f87a" testName="ChangePassword_Get_ReturnsView" computerName="WORKVM" duration="00:00:00.1459344" startTime="2011-04-07T18:42:35.2696362+10:00" endTime="2011-04-07T18:42:36.0735426+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a6d1c3b-e3c7-419c-ad39-4e65c91e37a1">
+    </UnitTestResult>
+    <UnitTestResult executionId="cac06341-d4c0-41b3-bba4-2464a87c7e0a" testId="139457e8-335f-3f55-b2a5-bcfb2b314526" testName="ChangePassword_Post_ReturnsRedirectOnSuccess" computerName="WORKVM" duration="00:00:00.0030464" startTime="2011-04-07T18:42:36.0823338+10:00" endTime="2011-04-07T18:42:36.0930786+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cac06341-d4c0-41b3-bba4-2464a87c7e0a">
+    </UnitTestResult>
+    <UnitTestResult executionId="b1c2a2a2-77c9-446f-a4e3-3d60ef2caeb6" testId="092c65df-bb24-39c6-3b72-baf05aa9ca91" testName="ChangePassword_Post_ReturnsViewIfChangePasswordFails" computerName="WORKVM" duration="00:00:00.0022036" startTime="2011-04-07T18:42:36.0979626+10:00" endTime="2011-04-07T18:42:36.1038234+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1c2a2a2-77c9-446f-a4e3-3d60ef2caeb6">
+    </UnitTestResult>
+    <UnitTestResult executionId="52c0f0e4-91fe-4589-87df-ab759e2d0f68" testId="1ea4a8bf-c433-5917-c8ed-fc91859ca58f" testName="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" computerName="WORKVM" duration="00:00:00.0005556" startTime="2011-04-07T18:42:36.1087074+10:00" endTime="2011-04-07T18:42:36.1135914+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52c0f0e4-91fe-4589-87df-ab759e2d0f68">
+    </UnitTestResult>
+    <UnitTestResult executionId="42f739f3-1b51-4645-b6c9-8cfbd91e84ea" testId="6f550e7a-84eb-d477-d487-190f1b5242f3" testName="ChangePasswordSuccess_ReturnsView" computerName="WORKVM" duration="00:00:00.0008559" startTime="2011-04-07T18:42:36.1350810+10:00" endTime="2011-04-07T18:42:36.1399650+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42f739f3-1b51-4645-b6c9-8cfbd91e84ea">
+    </UnitTestResult>
+    <UnitTestResult executionId="c0d0edde-4504-40a3-bf7b-77ae1de6e4d2" testId="77102074-19bc-f0cf-653b-b71c680d3f92" testName="LogOff_LogsOutAndRedirects" computerName="WORKVM" duration="00:00:00.0020122" startTime="2011-04-07T18:42:36.1487562+10:00" endTime="2011-04-07T18:42:36.1555938+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0d0edde-4504-40a3-bf7b-77ae1de6e4d2">
+    </UnitTestResult>
+    <UnitTestResult executionId="8d78e1e1-ce3e-4ada-8007-e305835786d4" testId="bc3b29b3-c89b-12ca-eadb-bd2a77b17964" testName="LogOn_Get_ReturnsView" computerName="WORKVM" duration="00:00:00.0004182" startTime="2011-04-07T18:42:36.1604778+10:00" endTime="2011-04-07T18:42:36.1643850+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d78e1e1-ce3e-4ada-8007-e305835786d4">
+    </UnitTestResult>
+    <UnitTestResult executionId="4a553a8e-29ff-4bda-8667-db3e93329e23" testId="f3c3037e-e28f-1f31-edab-dcbe9abbc878" testName="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" computerName="WORKVM" duration="00:00:00.0029266" startTime="2011-04-07T18:42:36.1702458+10:00" endTime="2011-04-07T18:42:36.1770834+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a553a8e-29ff-4bda-8667-db3e93329e23">
+    </UnitTestResult>
+    <UnitTestResult executionId="88e3fc39-a393-490b-b8eb-cf1ecfeec05e" testId="84273de0-1cf9-20da-b560-c0c1beb73bd3" testName="LogOn_Post_ReturnsRedirectOnSuccess_WithLocalReturnUrl" computerName="WORKVM" duration="00:00:00.0005469" startTime="2011-04-07T18:42:36.1809906+10:00" endTime="2011-04-07T18:42:36.1858746+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88e3fc39-a393-490b-b8eb-cf1ecfeec05e">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f359a3c-a3ad-4d0c-bbe0-639c2cbf3579" testId="23eb09d9-1519-a9a6-44bd-53e24463bd40" testName="LogOn_Post_ReturnsRedirectToHomeOnSuccess_WithExternalReturnUrl" computerName="WORKVM" duration="00:00:00.0007162" startTime="2011-04-07T18:42:36.1897818+10:00" endTime="2011-04-07T18:42:36.1946658+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f359a3c-a3ad-4d0c-bbe0-639c2cbf3579">
+    </UnitTestResult>
+    <UnitTestResult executionId="b999044e-7ecc-4bd4-9109-252e55cba424" testId="41f44855-3e8f-adbb-c5a0-0fca8b58c94b" testName="LogOn_Post_ReturnsViewIfModelStateIsInvalid" computerName="WORKVM" duration="00:00:00.0004830" startTime="2011-04-07T18:42:36.1985730+10:00" endTime="2011-04-07T18:42:36.2083410+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b999044e-7ecc-4bd4-9109-252e55cba424">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b131316-053a-4728-b6a7-e3c87967f0d8" testId="60620dd9-3bce-914b-63f4-25a0b7eeb609" testName="LogOn_Post_ReturnsViewIfValidateUserFails" computerName="WORKVM" duration="00:00:00.0005344" startTime="2011-04-07T18:42:36.2122482+10:00" endTime="2011-04-07T18:42:36.2171322+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b131316-053a-4728-b6a7-e3c87967f0d8">
+    </UnitTestResult>
+    <UnitTestResult executionId="b3c5b1b4-76dc-41e1-a5c3-4b302aeba0f1" testId="a4849415-5bde-8523-b695-d82317707666" testName="Register_Get_ReturnsView" computerName="WORKVM" duration="00:00:00.0022067" startTime="2011-04-07T18:42:36.2210394+10:00" endTime="2011-04-07T18:42:36.2269002+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3c5b1b4-76dc-41e1-a5c3-4b302aeba0f1">
+    </UnitTestResult>
+    <UnitTestResult executionId="3056a485-3f3b-4c62-9e45-5e0cf823d5a0" testId="0129aa10-bdb0-4acc-937f-4e937c513b8b" testName="Register_Post_ReturnsRedirectOnSuccess" computerName="WORKVM" duration="00:00:00.0032540" startTime="2011-04-07T18:42:36.2317842+10:00" endTime="2011-04-07T18:42:36.2395986+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3056a485-3f3b-4c62-9e45-5e0cf823d5a0">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed93b3df-9525-4b52-8e39-d7a3036bbfdb" testId="ef320b4e-eb3f-09cb-1303-3ff016786e60" testName="Register_Post_ReturnsViewIfRegistrationFails" computerName="WORKVM" duration="00:00:00.0038136" startTime="2011-04-07T18:42:36.2435058+10:00" endTime="2011-04-07T18:42:36.2522970+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed93b3df-9525-4b52-8e39-d7a3036bbfdb">
+    </UnitTestResult>
+    <UnitTestResult executionId="2f96fcb2-888d-4296-9f42-42494d93b34d" testId="20e87d7b-72ec-d77e-ec78-b09a93507292" testName="Register_Post_ReturnsViewIfModelStateIsInvalid" computerName="WORKVM" duration="00:00:00.0005615" startTime="2011-04-07T18:42:36.2562042+10:00" endTime="2011-04-07T18:42:36.2601114+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f96fcb2-888d-4296-9f42-42494d93b34d">
+    </UnitTestResult>
+    <UnitTestResult executionId="f79937fe-2c46-4192-82c7-c3fb96edf6d0" testId="c2cd1a28-ec4b-6499-d653-2a179aa4fd76" testName="Index" computerName="WORKVM" duration="00:00:00.0211836" startTime="2011-04-07T18:42:36.2649954+10:00" endTime="2011-04-07T18:42:36.2903922+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f79937fe-2c46-4192-82c7-c3fb96edf6d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="88dbc116-cfd0-4ab7-95a3-4d4f4391752b" testId="39e0631b-d5f8-1ce4-5584-a008e697d73a" testName="About" computerName="WORKVM" duration="00:00:00.0004274" startTime="2011-04-07T18:42:36.2942994+10:00" endTime="2011-04-07T18:42:36.2991834+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88dbc116-cfd0-4ab7-95a3-4d4f4391752b">
+    </UnitTestResult>
+  </Results>
+</TestRun>

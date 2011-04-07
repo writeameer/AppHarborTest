@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="B9FBC38E-ED00-42B3-8834-0064EAA1D45E" ModuleId="AppHarborTest" />
+  <Module PersistentId="5584E251-6AFE-4DB8-81D7-22C8A2F59159" ModuleId="AppHarborTest.Tests" />
+</Modules>

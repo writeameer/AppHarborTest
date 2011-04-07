@@ -1,0 +1,8 @@
+C:\progs\AppHarborTest\AppHarborTest.Tests\bin\Debug\AppHarborTest.Tests.dll.config
+C:\progs\AppHarborTest\AppHarborTest.Tests\bin\Debug\AppHarborTest.Tests.dll
+C:\progs\AppHarborTest\AppHarborTest.Tests\bin\Debug\AppHarborTest.Tests.pdb
+C:\progs\AppHarborTest\AppHarborTest.Tests\bin\Debug\AppHarborTest.dll
+C:\progs\AppHarborTest\AppHarborTest.Tests\bin\Debug\AppHarborTest.pdb
+C:\progs\AppHarborTest\AppHarborTest.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\progs\AppHarborTest\AppHarborTest.Tests\obj\Debug\AppHarborTest.Tests.dll
+C:\progs\AppHarborTest\AppHarborTest.Tests\obj\Debug\AppHarborTest.Tests.pdb
